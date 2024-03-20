@@ -76,17 +76,26 @@ p {
 .banner {
     padding-top: 100px;
     padding-bottom: 50px;
-    background-image: url('images/banner.png');
+    background-image: url('images/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 90vh; */
 }
 
+.banner .title {
+    font-size: 3.5rem;
+}
+
+.banner .sub-title{
+    font-size: 22px;
+    line-height: 30px;
+}
+
 .section-title {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.125rem;
     color: #828283;
     text-transform: uppercase;
     border-bottom: 2px solid var(--secondary);
@@ -95,9 +104,16 @@ p {
 }
 
 .title {
+    font-size: 2.5rem;
     color: var(--primary);
     margin-bottom: 10px;
     font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.library-title {
+    font-size: x-large;
 }
 
 .card-form {
@@ -134,7 +150,6 @@ label {
 }
 
 .mr-img-2 {
-    height: 445px;
     width: 100%;
     /* margin-left: 20%; */
 }
@@ -234,8 +249,12 @@ label {
     line-height: 25px;
 }
 
+.blog-title {
+    font-size: 1.4rem;
+}
+
 .blog-description {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
 }
 
@@ -247,7 +266,7 @@ label {
     display: inline-block;
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin-left: 10px;
+    margin-left: -300px;
     margin-top: -30px;
 }
 
@@ -257,7 +276,7 @@ label {
 }
 
 .target p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
 }
 
@@ -270,6 +289,7 @@ footer {
 }
 
 footer a {
+    text-decoration: none;
     color: #898686 !important;
     transition: 0.2s;
 }
@@ -425,14 +445,17 @@ footer a:hover {
 }
 
 .notice-time {
+    border-right: 1px solid black;
+    margin-top: 5px;
+}
+
+.notice-time span {
     color: var(--secondary);
     padding: 10px 12px;
     text-align: center;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    border-right: 1px solid black;
-    margin-top: 5px;
 }
 
 .testimonial {
@@ -449,6 +472,26 @@ footer a:hover {
 .testimonial-avatar {
     height: 100px;
     width: 120px;
+}
+
+.aboutus-section-title-container {
+    text-align: start;
+}
+
+.courses-title {
+    text-align: start;
+}
+
+.counter h2 {
+    font-size: 2.5rem;
+}
+
+.counter h6 {
+    font-size: 22px;
+}
+
+.brochure .title {
+    font-size: 2rem;
 }
 
 @keyframes scroll {
@@ -481,9 +524,26 @@ footer a:hover {
         text-align: center;
     } 
 
+    .banner .title {
+        font-size: 2rem;
+    }
+
+    .banner .sub-title {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
     .title {
         text-align: center;
+        font-size: 1.5rem;
+    }
 
+    .aboutus-section-title-container {
+        text-align: center;
+    }
+
+    .courses-title {
+        text-align: center;
     }
 
     p {
@@ -493,7 +553,7 @@ footer a:hover {
     .banner {
         padding-top: 100px;
         padding-bottom: 50px;
-        background-image: url('images/mobile-banner.png');
+        background-image: url('images/mobile-banner.jpg');
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -506,17 +566,12 @@ footer a:hover {
         width: 100%;
     }
 
-    .mr-img-2 {
-        height: 245px;
-        /* margin-left: 20%; */
-    }
-
     .contact p {
         text-align: center;
     }
     
     label {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .swiper-slide {
@@ -533,6 +588,7 @@ footer a:hover {
     .swiper-button-next,
     .swiper-button-prev {
         margin-top: -45px;
+        display: none;
     }
 
     .noticeSwiper .swiper-button-next {
@@ -553,6 +609,34 @@ footer a:hover {
 
     .testimonial-feedback {
         height: 150px;
+    }
+
+    .counter h2 {
+        font-size: 1.5rem;
+    }
+
+    .counter h6 {
+        font-size: 15px;
+    }
+
+    .brochure .title {
+        font-size: 1.5rem;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .blog-time {
+        background-color: var(--secondary);
+        padding: 10px 12px;
+        border-radius: 0px 0px 30px 0px;
+        text-align: center;
+        display: inline-block;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        margin-left: -250px;
+        margin-top: -30px;
     }
 }
 
